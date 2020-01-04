@@ -26,7 +26,6 @@ for file_json in files_json:
         try:
             call = Call.create(phone_in=phone_in, phone_out=phone_out, start_call=start_time, finish_call=finish_time, cost=cost) 
             list_files_json_del.append(file_json)  # лист файлов на удаление
-            os.remove(PATH +'\\' + file_json)
         except:
             print('ошибка сохранения данных')
         finally:
